@@ -1,5 +1,6 @@
 **#Motivation**
 My major motivation for this was, learning how to work with react App and other frameworks. I've planned to use this shop to distribute merchandise. 
+
 **#Future**
 I do not plan to maintain this project anymore, feel free to commit to it, I will check merge request frequently. 
 
