@@ -1,0 +1,222 @@
+#card {
+	width: 20vw;
+	background-color: var(--grey);
+	height: auto;
+	box-shadow: 0 0 10px var(--grey);
+	border-radius: 8px;
+	position: relative;
+	margin-bottom: 2.2rem;
+	margin-top: 1.2rem;
+	/*	transition: 0.1s;*/
+}
+
+#card:hover:before {
+	opacity: 1;
+}
+
+#card::before {
+	content: "";
+	box-shadow: 0 0 30px var(--grey);
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	right: 0;
+	opacity: 0;
+}
+
+#topCard {
+	width: 100%;
+	height: 11vw;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: white;
+	transition: 0.2s;
+	border-radius: 8px 8px 0 0;
+}
+
+.toggleTopCard {
+	height: 9vw !important;
+}
+
+.toggleBottomCard {
+	min-height: 14vw !important;
+}
+
+#bottomCard {
+	min-height: 10vw;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.4rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	transition: 0.2s;
+}
+
+#bottomCard > h6 {
+	font-size: clamp(1rem, 1.5vw, 1.8rem);
+	font-weight: bolder;
+	color: white;
+	margin: 0;
+	margin-top: 0.4rem;
+}
+
+#bottomCard > h6 > span {
+	font-size: clamp(1rem, 1.5vw, 1.8rem);
+	color: var(--purple);
+	margin-left: 0.4rem;
+}
+
+#buttonPlace {
+	display: flex;
+	bottom: 1rem;
+	margin-top: 1.4rem;
+}
+
+#buttonPlace > a {
+	font-size: 1.1rem;
+	padding: 0.3rem 1rem;
+	font-weight: bolder;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+#buyBTN {
+	color: white;
+	height: fit-content;
+	padding: 0.3rem 1.4rem 0.5rem 1.4rem !important;
+	background-color: var(--purple);
+	box-shadow: 0 2px 5px var(--purple);
+}
+
+#detailsBTN {
+	height: fit-content;
+	color: var(--green);
+	background-color: transparent;
+	box-shadow: 0 4px 10px var(--green);
+	border: solid 3px var(--green);
+	margin-left: 1rem;
+	position: relative;
+}
+
+#detailsBTN::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 0%;
+	background-color: var(--green);
+	transition: 0.3s;
+}
+
+#detailsBTN:hover:after {
+	height: 100%;
+}
+#detailsBTN:hover span {
+	color: var(--mainColor);
+	position: relative;
+}
+
+#detailsBTN > span {
+	z-index: 2;
+}
+
+#inDetails {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0%;
+	z-index: 4;
+	background-color: var(--grey);
+	transition: 0.4s;
+	overflow: hidden;
+	border-radius: 0px 0px 5px 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#closeDetails {
+	width: 100%;
+	background-color: var(--grey);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+
+#closeDetails > svg {
+	width: 24px;
+	transform: rotate(180deg);
+	fill: var(--purple);
+}
+
+.toggleBuy {
+	height: 100% !important;
+}
+
+#wrapper {
+	cursor: pointer;
+	padding: 0.4rem;
+	box-sizing: border-box;
+}
+
+#wrapper:hover {
+	background-color: var(--purple);
+}
+
+#wrapper h2,
+h3 {
+	margin: 0;
+	color: white;
+}
+
+#wrapper h3 {
+	font-size: 1rem;
+	font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+#wrapper h2 {
+	font-size: 1.2rem;
+	color: var(--green);
+	font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+@media screen and (max-width: 1180px) {
+	.toggleBuy {
+		height: 105% !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#wrapper h2 {
+		font-size: clamp(1rem, 3.2vw, 1.3rem);
+	}
+	#wrapper h3 {
+		font-size: clamp(1rem, 3.2vw, 1.3rem);
+	}
+	.toggleBuy {
+		height: 124% !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#wrapper h2 {
+		font-size: clamp(1rem, 5.2vw, 3.3rem);
+	}
+	#wrapper h3 {
+		font-size: clamp(1rem, 5.2vw, 3.3rem);
+	}
+	.toggleBuy {
+		height: 105% !important;
+	}
+}

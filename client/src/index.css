@@ -1,0 +1,47 @@
+:root {
+	--mainColor: #060818;
+	--green: #22A6B3;
+	--red: #FC427B;
+	--grey: #0E1726;
+	--purple: #4361EE;
+	--toastify-color-success: #4361EE;
+/*	--aqua: #00D2D3;*/
+}
+
+body{
+	background-color: var(--mainColor);
+	box-sizing: border-box;
+	font-family: 'Maven Pro', sans-serif;
+	overflow-x: hidden !important;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.Toastify__toast--error {
+  background: #0E1726 !important;
+  bottom: 2vw !important;
+}
+
+.Toastify__toast--success {
+  background: #0E1726 !important;
+  bottom: 2vw !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 10px
+}

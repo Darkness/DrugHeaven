@@ -1,0 +1,269 @@
+#checkout {
+	transform: translate(-50%,-50%);
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	display: flex;
+}
+
+#leftCheckout > form {
+	padding: 1rem;
+	border: 4px solid var(--purple);
+	box-shadow: 0 0 10px var(--purple);
+	border-radius: 8px;
+	width: 25vw;
+}
+
+#leftCheckout > form > h2 {
+	color: var(--purple);
+	margin: 0;
+	font-size: 1.8rem;
+	margin-bottom: 1.4rem;
+}
+
+#inputWrapperTwo {
+	display: flex;
+	flex-direction: column;
+}
+
+#inputWrapperTwo > input {
+	padding: 0.3rem 0;
+	font-size: 1.1rem;
+	color: white;
+	border: 0;
+	border-bottom: 8px solid var(--purple);
+	margin-top: 0.5rem;
+	background-color: transparent;
+}
+
+#inputWrapperTwo > input::placeholder {
+	color: wheat;
+}
+
+#inputWrapperTwo > input:focus {
+	outline: none;
+}
+
+#inputWrapperTwo > span{
+	color: var(--red);
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+}
+
+#btnWrapperTwo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+#btnWrapperTwo > button {
+	border: 0;
+	padding: 0.3rem 1.8rem;
+	background-color: var(--purple);
+	font-size: 1.1rem;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.4s;
+	box-shadow: 0 4px 10px var(--purple)
+}
+
+#btnWrapperTwo > button:hover {
+	transform: translateY(-0.2rem);
+}
+
+#btnWrapperTwo > a {
+	border: 0;
+	padding: 0.3rem 1.5rem;
+	background-color: var(--red);
+	font-size: 1.1rem;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.4s;
+	box-shadow: 0 4px 10px var(--red);
+	text-decoration:none;
+}
+
+#btnWrapperTwo > a:hover {
+	transform: translateY(-0.2rem);
+}
+
+#leftCheckout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#checkoutIllustration {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../../images/checkout.png');
+	height: 17vw;
+    width: 24vw;
+	margin-left: 5rem;
+}
+
+#cryptoWrapper {
+	display: flex;
+	gap: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+#cryptoWrapper > div {
+	cursor: pointer;
+}
+
+#cryptoWrapper > div > svg {
+	width: 30px;
+	height: 30px;
+}
+
+#checkout-error {
+	color: var(--red);
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1180px) {
+	#checkout {
+		width: 80%;
+		top: 50%;
+	}
+	#checkout > #leftCheckout{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	#checkout > #leftCheckout > form {
+		width: 70%;	
+	}
+	#checkoutIllustration {
+		display: none;
+	}
+	#leftCheckout > form > h2 {
+		font-size: 2.1rem;
+	}
+	#inputWrapperTwo > input {
+		font-size: 1.4rem;
+		margin-top: 1rem
+	}
+	#inputWrapperTwo > span {
+		font-size: 1.1rem;
+	}
+	#btnWrapperTwo > button {
+		font-size: 1.5rem;
+		padding: 0.5rem 2.4rem;
+	}
+	#btnWrapperTwo {
+		margin-top: 2rem;
+	}
+	#btnWrapperTwo > a {
+		font-size: 1.5rem;
+		padding: 0.5rem 2.4rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#checkout {
+		width: 100%;
+		top: 50%;
+	}
+	#checkout > #leftCheckout{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	#checkout > #leftCheckout > form {
+		width: 100%;
+		border: 0 !important;
+		box-shadow: none !important;
+		box-sizing: border-box;
+	}
+	#checkoutIllustration {
+		display: none;
+	}
+	#leftCheckout > form > h2 {
+		font-size: 3.1rem;
+	}
+	#inputWrapperTwo > input {
+		font-size: 2.1rem;
+		border-bottom: 10px solid var(--purple);
+		margin-top: 1rem
+	}
+	#inputWrapperTwo > span {
+		font-size: 1.8rem;
+		margin-top: 1rem !important;
+	}
+	#btnWrapperTwo > button {
+		font-size: 1.5rem;
+		padding: 1rem 2.4rem;
+		border-radius: 0;
+	}
+	#btnWrapperTwo {
+		margin-top: 2rem;
+		flex-direction: column;
+	}
+	#btnWrapperTwo > a {
+		font-size: 1.5rem;
+		text-align: center;
+		border-radius: 0;
+		margin-top: 1rem !important;
+		padding: 1rem 2.4rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#checkout {
+		width: 100%;
+		position: static;	
+		transform: translate(0);
+		margin-top: 4rem;
+	}
+	#checkout > #leftCheckout{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	#checkout > #leftCheckout > form {
+		width: 100%;
+		border: 0 !important;
+		box-shadow: none !important;
+		box-sizing: border-box;
+	}
+	#checkoutIllustration {
+		display: none;
+	}
+	#leftCheckout > form > h2 {
+		font-size: 2.1rem;
+	}
+	#inputWrapperTwo > input {
+		font-size: 1.4rem;
+		border-bottom: 10px solid var(--purple);
+		margin-top: 1rem
+	}
+	#inputWrapperTwo > span {
+		font-size: 1.2rem;
+		margin-top: 1rem !important;
+	}
+	#btnWrapperTwo > button {
+		font-size: 1.1rem;
+		padding: 0.7rem 2.4rem;
+		border-radius: 0;
+	}
+	#btnWrapperTwo {
+		margin-top: 2rem;
+		flex-direction: column;
+	}
+	#btnWrapperTwo > a {
+		font-size: 1.1rem;
+		text-align: center;
+		border-radius: 0;
+		margin-top: 1rem !important;
+		padding: 0.7rem 2.4rem;
+	}
+}
